@@ -1,0 +1,84 @@
+/* تنسيق عام */
+body {
+    font-family: Arial, sans-serif;
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* قائمة الكتب */
+#list-panel {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    height: 80vh;
+    overflow-y: auto;
+}
+
+#list li {
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    list-style-type: none;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s;
+}
+
+#list li:hover {
+    background-color: #e0f7fa;
+}
+
+/* تفاصيل الكتاب */
+#show-panel {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+#show-panel img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+#show-panel h2 {
+    margin-bottom: 10px;
+    color: #00796b;
+}
+
+#show-panel p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* قائمة المستخدمين الذين أعجبهم الكتاب */
+#show-panel ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+#show-panel ul li {
+    margin-bottom: 5px;
+}
+
+/* زر الإعجاب */
+#show-panel button {
+    background-color: #00796b;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#show-panel button:hover {
+    background-color: #004d40;
+}
